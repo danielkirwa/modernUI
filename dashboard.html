@@ -8,6 +8,7 @@
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="css1/table.css">
    </head>
 <body style="background: #E3F2FD;">
   <div class="sidebar">
@@ -153,24 +154,36 @@
         <div class="recent-sales box">
           <div class="title">Recent Tasks</div>
           <div class="sales-details">
-            <ul class="details">
-              <li class="topic">Date</li>
-              <li><a href="#">02 Jan 2024</a></li>
-            </ul>
-            <ul class="details">
-            <li class="topic">Task</li>
-            <li><a href="#">vaccination</a></li>
-            
-          </ul>
-          <ul class="details">
-            <li class="topic">Executer</li>
-            <li><a href="#">user 1</a></li>
-           
-          </ul>
-          <ul class="details">
-            <li class="topic">Status</li>
-            <li><a href="#">comoplete</a></li>
-          </ul>
+             
+             <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>john@example.com</td>
+                <td><button class="action-button">Modify</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>jane@example.com</td>
+                <td><button class="action-button">Modify</button></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
           </div>
           <div class="button">
             <a href="#">See All</a>
@@ -178,25 +191,13 @@
         </div>
         <div class="top-sales box">
           <div class="title">Upcoming tasks</div>
-          <ul class="top-sales-details">
-            <li>
-            <a href="#">
-              <img src="images/sunglasses.jpg" alt="">
-              <span class="product">vaccination</span>
-            </a>
-            <span class="price">1107</span>
-          </li>
-          <li>
-            <a href="#">
-               <img src="images/jeans.jpg" alt="">
-              <span class="product">House migration </span>
-            </a>
-            <span class="price">1567</span>
-          </li>
-        
-          
-          
-          </ul>
+          <div class="notification">
+           <div class="notification-content">
+           <div class="notification-message">This is a notification message.</div>
+              <button class="action-button">Action</button>
+           </div>
+         </div>
+
         </div>
       </div>
     </div>
